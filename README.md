@@ -17,3 +17,6 @@
 자신의 통장을 자동이체 설정을 하고 시간내에 목표치에 도달하지 못하면 특정금액씩 빠져나가서
 목표치에 도달할시에만 금액을 되찾을수있게 해놓는 앱이다.
 
+## 7주차 과제
+<img width="" height="" src="./png/pic1.png"></img>
+<img width="" height="" src="./png/pic2.png"></img>
