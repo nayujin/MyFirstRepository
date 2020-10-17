@@ -18,5 +18,5 @@
 목표치에 도달할시에만 금액을 되찾을수있게 해놓는 앱이다.
 
 ## 7주차 과제
-<img width="" height="" src="./png/pic1.png"></img>
-<img width="" height="" src="./png/pic2.png"></img>
+<img width="" height="" src="./png/pic1.PNG"></img>
+<img width="" height="" src="./png/pic2.PNG"></img>
