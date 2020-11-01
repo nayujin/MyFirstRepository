@@ -22,10 +22,10 @@
 <img width="" height="" src="./png/pic2.PNG"></img>
 
 ## 9주차 과제
-<img width="" height="" src="./png/original.PNG"></img>
-<img width="" height="" src="./png/change.PNG"></img>
-<img width="" height="" src="./png/width.PNG"></img>
-<img width="" height="" src="./png/height.PNG"></img>
+<img width="" height="" src="./png/original.png"></img>
+<img width="" height="" src="./png/change.png"></img>
+<img width="" height="" src="./png/width.png"></img>
+<img width="" height="" src="./png/height.png"></img>
 public class MainActivity extends AppCompatActivity {
 
     ScrollView scrollView;
