@@ -20,3 +20,66 @@
 ## 7주차 과제
 <img width="" height="" src="./png/pic1.PNG"></img>
 <img width="" height="" src="./png/pic2.PNG"></img>
+
+## 9주차 과제
+<img width="" height="" src="./png/original.PNG"></img>
+<img width="" height="" src="./png/change.PNG"></img>
+<img width="" height="" src="./png/width.PNG"></img>
+<img width="" height="" src="./png/height.PNG"></img>
+public class MainActivity extends AppCompatActivity {
+
+    ScrollView scrollView;
+    ImageView imageView;
+    BitmapDrawable bitmap;
+    String Width;
+    String Height;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        scrollView = findViewById(R.id.verScrollView);
+        imageView = findViewById(R.id.imageView);
+        scrollView.setHorizontalScrollBarEnabled(true);
+
+        Resources res = getResources();
+        bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image01);
+        int bitmapWidth = bitmap.getIntrinsicWidth();
+        int bitmapHeight = bitmap.getIntrinsicHeight();
+        Width = Integer.toString(bitmapWidth);
+        Height = Integer.toString(bitmapWidth);
+
+        imageView.setImageDrawable(bitmap);
+        imageView.getLayoutParams().width = bitmapWidth;
+        imageView.getLayoutParams().height = bitmapHeight;
+
+    }
+    public void btnClicked(View v)
+    {
+        changeImage();
+    }
+    public void btnWClicked(View v)
+    {
+        Toast.makeText(this,Width,Toast.LENGTH_LONG).show();
+    }
+    public void btnHClicked(View v)
+    {
+        Toast.makeText(this,Height,Toast.LENGTH_LONG).show();
+    }
+    private void changeImage()
+    {
+        Resources res = getResources();
+        bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image02);
+        int bitmapWidth = bitmap.getIntrinsicWidth();
+        int bitmapHeight = bitmap.getIntrinsicHeight();
+        Width = Integer.toString(bitmapWidth);
+        Height = Integer.toString(bitmapWidth);
+
+        imageView.setImageDrawable(bitmap);
+        imageView.getLayoutParams().width = bitmapWidth;
+        imageView.getLayoutParams().height = bitmapHeight;
+
+    }
+}
